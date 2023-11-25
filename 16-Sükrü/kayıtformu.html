@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+</head>
+<h1 align="center">KURS BASVURU FORMU</h1>
+<body>
+
+    <fieldset><legend align="center"><h3>Ögrenci Bilgileri</h3> </legend>
+
+      <p>
+        Adı:  <input type="text" placeholder="Adınızı giriniz" name="ad" >
+        
+            Soyadı: <input type="text" placeholder="Soyadınızı giriniz" name="soyad" >
+        
+            Doğum tarihi: <input type="date" placeholder="Doğum tarihinizi giriniz" name="dogum tarihi">
+      </p>
+
+       <p>
+        Doğum yeri:  <select name="dogum yeri"> 
+            <option value="">Seçiniz</option>
+            <option value="">İstanbul</option>
+            <option value="">Ankara</option>
+            <option value="">Bursa</option>
+            <option value="">İzmir</option>
+            <option value="">Çorum</option>
+        </select>
+    
+        Email: <input type="email" placeholder="E-mail giriniz" name="email" >
+    
+        Şifre: <input type="password" placeholder="Sifrenizi giriniz" name="sifre">
+    
+        Telefon numarasi: <input type="tel" placeholder="Telefon giriniz" name="telefon">
+
+        Ögrenim durumu: <input type="date" placeholder="ögrenim durumunu giriniz" name="ögrenim durumu" >
+
+       </p>
+        
+               
+         <p>
+            Yabanci Dil:
+            <label><input type="checkbox">İngilizce </input> </label>
+            <label><input type="checkbox">Almanca </input> </label>
+            <label><input type="checkbox">Fransizca </input> </label>
+            <label><input type="checkbox">İtalyanca </input> </label>
+            <label><input type="checkbox">İspanyoca </input> </label>
+         </p>      
+        
+
+      <p>
+        Cinsiyet:         
+            <label for=""><input name="cinsiyet" type="radio">Erkek </input> </label>
+            <label for=""><input name="cinsiyet" type="radio">Kadin </input> </label>
+      </p>
+    
+    </fieldset>
+
+    <br>
+
+    <fieldset><legend align="center"><h3>Kurs Bilgileri</h3> </legend>
+
+        <h3>ÖGRENILECEK DİL SEÇINİZ:</h3>
+
+        <label for=""><input name="dil" type="radio">Ingilizce </input> </label>
+        <label for=""><input name="dil" type="radio">Almanca </input> </label>
+        <label for=""><input name="dil" type="radio">Fransizca </input> </label>
+        <label for=""><input name="dil" type="radio">Italyanca </input> </label>                
+        <br>
+
+        <h4>Ögrenilecek Dil Seviyesi: </h3>
+        
+        <p>
+            <label for=""><input name="dil seviyesi" type="checkbox">A1 </input> </label>
+            <label for=""><input name="dil seviyesi" type="checkbox">A2 </input> </label>
+            <label for=""><input name="dil seviyesi" type="checkbox">B1 </input> </label>
+            <label for=""><input name="dil seviyesi" type="checkbox">B2 </input> </label>
+            <label for=""><input name="dil seviyesi" type="checkbox">C1 </input> </label>
+            <label for=""><input name="dil seviyesi" type="checkbox">C2 </input> </label>
+        
+        </p>
+               
+       
+                
+        <h4>Diger Bilgiler:</h4>
+        <textarea placeholder="iletmek istediginiz mesajinizi yazabilirsiniz zorunlu alan degildir" name="Diger Bilgiler:" id="" cols="50" rows="10"></textarea>
+    </fieldset>
+
+    <br>
+
+    <button>KAYDET</button>
+    
+    <button>TEMIZLE</button>
+
+    <br> <br> <br>
+
+    <table align="center" border="4" cellspacing="">
+        <tr>
+            <td> <b>Adi </b></td>
+            <td> <b>Soyadi</b> </td>
+            <td> <b>Dogum tarihi</b></td>
+            <td><b>Dogum yeri</b></td>
+            <td><b>Email</b></td>
+            <td><b>Telefon</b></td>
+            <td><b>Egitim durumu</b></td>
+            <td><b>Yabanci dil bilgisi</b></td>
+            <td><b>Cinsiyet</b></td>
+            <td><b>Kurs Bilgileri</b></td>
+            <td><b>Kurs Seviyesi</b></td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Yilmaz</td>
+            <td>01.01.1990</td>
+            <td>Ankara</td>
+            <td>ali.yilmaz@gmail.com    </td>
+            <td>5413678234    </td>        
+            <td>lisans    </td>
+            <td>ingilizce    </td>
+            <td>erkek    </td>
+            <td>fransizca    </td>
+            <td>a1    </td>
+        </tr>
+        <tr> <b>
+            <td>Vasfiye</td>
+            <td>Dag</td>
+            <td>01.12.1980</td>
+            <td>Istanbul</td>
+            <td>vasfiye.dag@gmail.com    </td>
+            <td>5415613425    </td>        
+            <td>lise    </td>
+            <td>almanca    </td>
+            <td>kadin    </td>
+            <td>almanca    </td>
+            <td>c1    </td></b>
+        </tr>
+        <tr>
+            <td>Elif</td>
+            <td>Günes</td>
+            <td>01.01.1995</td>
+            <td>Kayseri</td>
+            <td>elif.günes@gmail.com    </td>
+            <td>5413654545    </td>        
+            <td>ön lisans    </td>
+            <td>italyanca    </td>
+            <td>kadin    </td>
+            <td>ingilizce    </td>
+            <td>c1    </td>
+        </tr>
+    </table>
+</body>
+</html>
