@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basvuru Formu</title>
+</head>
+
+<body>
+
+    <!-- Ödev aciklamasi
+    Bir kurs basvurusu ile ilgili ogrenci kayit formu olusturun.
+    1.Bolum ogrenci bilgileri ile ilgili,
+    adi, soyadi, dogum tarihi, dogum yeri, email, cinsiyet, tel vb. bilgileri ile, ogrenim ve yabanci dil durumunu
+    gostericek.
+    2.Bolum ogrencinın basvuru yapacagı kursla ılgılı kısım,
+    checkbox, radio, select ve textarea elementlerini kullanin
+    Ogrencinin girmis oldugu verileri gosteren bir tablo olusturun.
+    3 ogrencinin verisini tabloya isleyin.:)) -->
+    
+<h1 style="text-align: center;">KURS BEWERBUNGSFORM</h1>
+
+
+<section>
+
+<div style=" width: 100px;  height: 100px;border-radius: 50% ; border: 1px solid rgb(136, 127, 127); float: right;">
+</div>
+<br><br><br><br><br><br>
+<fieldset>
+    <legend align="center">
+        <b>Schüler Form</b>
+    </legend>
+
+<span>Vorname:</span> <input type="text" placeholder="vorname"> 
+<span>Nachname:</span> <input type="text" placeholder="nachname">
+<span>Geburtstag:</span> <input type="date" >
+
+<br><br>
+
+<span>Geburtsort:</span> 
+<select>
+    <option value="">seciniz</option>
+    <option value="">Köln</option>
+    <option value="">Dortmund</option>
+    <option value="">Siegen</option>
+    <option value="">Düsseldorf</option>
+</select>
+
+<span>E-Mail:</span> <input type="text" placeholder="e-mail">
+<span>Password:</span> <input type="text" placeholder="password">
+<span>Tel:</span> <input type="tel" placeholder="tel">
+
+<span>Bildungsstatus:</span>
+<select>
+    <option value="">seciniz</option>
+    <option value="">Bachelor</option>
+    <option value="">Ausbildung</option>
+    <option value="">Weiterbildung</option>   
+</select>
+<br><br>
+<span>Fremde Sprache:</span>
+<!-- iki yontemle yazinin uzerine gelince de kendi checkboxi tiklanabilsin yapariz.-->
+<label >
+<input type="checkbox" id="check1" name="deutsch" value="deutsch">Deutsch
+</label>
+
+<input type="checkbox" id="check2" name="englisch" value="englisch">
+<label for="check2">English</label>
+
+<label >
+<input type="checkbox" id="check3" name="fransözisch" value="fransözisch">Fransözisch
+</label>
+
+<input type="checkbox" id="check4" name="spanisch" value="spanisch">
+<label for="check4">Spanisch</label>
+<label >
+<input type="checkbox" id="check5" name="turkisch" value="turkisch">Türkish
+</label>
+
+<br><br>
+<span>Geschlecht:</span>
+
+<input type="radio" id="mann" name="cinsiyet" value="mannn">
+<label for="mann">männlich</label>
+
+
+<input type="radio" id="frau" name="cinsiyet" value="frauu">
+<label for="frau" >weiblich</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend align="center"  >
+        <b>Kurs Information</b>
+    </legend>
+
+    
+    <span><b>WÄHLEN SIE SPRACHE: </b></span>
+    <br><br>
+
+    <input type="radio" id="eng" name="sprache" value="englisch">
+    <label for="eng">Englisch</label>
+
+    <input type="radio" id="deu" name="sprache" value="deutsch">
+    <label for="deu">Deutsch</label>
+
+    <input type="radio" id="frns" name="sprache" value="französisch">
+    <label for="frns">Französisch</label>
+
+    <input type="radio" id="itly" name="sprache" value="italienisch">
+    <label for="itly">Italienisch</label>
+
+    <br><br>
+    <span> <b>Sprachniveau:</b></span>  
+
+    <label>
+    <input type="checkbox">A1
+    </label>
+
+    <label>
+    <input type="checkbox">A2
+    </label>
+
+    <input type="checkbox" id="b1">
+    <label for="b1">B1</label>
+
+    <input type="checkbox" id="b2">
+    <label for="b2">B2</label>
+
+    <input type="checkbox" id="c1">
+    <label for="c1">C1</label>
+
+    <input type="checkbox" id="c2">
+    <label for="c2">C2</label>
+
+<br><br>
+    <span>Andere Informationen:</span>
+    <br><br>
+    <textarea name="" id="" cols="70" rows="5" placeholder="Sie können Nachrichten hinzufügen."></textarea>
+
+
+</fieldset>
+
+<br><br>
+
+<button>KAYDET</button>
+<button>TEMIZLE</button>
+
+<br><br>
+
+<table border="1">
+
+<thead>
+    <tr>
+        <th>VORNAME</th>
+        <th>NACHNAME</th>
+        <th>GEBURTSTAG</th>
+        <th>GEBURTSORT</th>
+        <th>E-MAIL</th>
+        <th>TELEFON</th>
+        <th>BILDUNGSSTATUS</th>
+        <th>FREMDE SPRACHE</th>
+        <th>GESCHLECHT</th>
+        <th>KURS INFORMATION</th>
+        <th>KURSNIVEAU</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Jakob</td>
+        <td>Marx</td>
+        <td>13.05.2000</td>
+        <td>Freiburg</td>
+        <td>marx@gmail.com</td>
+        <td>1775956453</td>
+        <td>Bachelor</td>
+        <td>Französisch</td>
+        <td>männlich</td>
+        <td>Web Developer</td>
+        <td>Junior</td>
+    </tr>
+
+    <tr>
+        <td>Tina</td>
+        <td>Versin</td>
+        <td>23.11.2002</td>
+        <td>Berlin</td>
+        <td>versin@gmail.com</td>
+        <td>1575956453</td>
+        <td>Bachelor</td>
+        <td>Spanisch</td>
+        <td>weiblich</td>
+        <td>FullStack Developer</td>
+        <td>Junior</td>
+    </tr>
+
+    <tr>
+        <td>Anna</td>
+        <td>Judith</td>
+        <td>18.07.2004</td>
+        <td>Stuttgart</td>
+        <td>judith@gmail.com</td>
+        <td>1655956453</td>
+        <td>Bachelor</td>
+        <td>Italienisch</td>
+        <td>weiblich</td>
+        <td>Software Developer</td>
+        <td>Junior</td>
+    </tr>
+</tbody>
+
+
+
+
+</table>
+
+
+</section>
+
+</body>
+</html>
