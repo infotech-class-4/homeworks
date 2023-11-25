@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basvuru formu</title>
+    <link rel="stylesheet"href="style.css">
+
+</head>
+<body>
+    <h1>KURS BASVURU FORMU</h1>
+    <form>
+    <fieldset><legend align="center"> <strong>Ögrenci bilgileri</strong></legend>
+    <span>Ad:</span><input type="text" placeholder="isminizi giriniz" required>
+    <span>Soyadi:</span><input type="text" placeholder="soyisim giriniz" required>
+    <span>Dogum tarihi:</span><input type="date" placeholder="" required>
+    <br>
+    <br>
+    <span>Dogum yeri:</span>
+    <select name="Sehir" required>
+     <option value="">secınız</option>
+     <option value="1">Adana</option>
+     <option value="2">Adıyaman</option>
+     <option value="3">Afyonkarahisar</option>
+     <option value="4">Ağrı</option>
+     <option value="5">Amasya</option>
+     <option value="6">Ankara</option>
+     <option value="7">Antalya</option>
+     <option value="8">Artvin</option>
+     <option value="9">Aydın</option>
+     <option value="10">Balıkesir</option>
+     <option value="11">Bilecik</option>
+     <option value="12">Bingöl</option>
+     <option value="13">Bitlis</option>
+     <option value="14">Bolu</option>
+     <option value="15">Burdur</option>
+     <option value="16">Bursa</option>
+     <option value="17">Çanakkale</option>
+     <option value="18">Çankırı</option>
+     <option value="19">Çorum</option>
+     <option value="20">Denizli</option>
+     <option value="21">Diyarbakır</option>
+     <option value="22">Edirne</option>
+     <option value="23">Elazığ</option>
+     <option value="24">Erzincan</option>
+     <option value="25">Erzurum</option>
+     <option value="26">Eskişehir</option>
+     <option value="27">Gaziantep</option>
+     <option value="28">Giresun</option>
+     <option value="29">Gümüşhane</option>
+     <option value="30">Hakkâri</option>
+     <option value="31">Hatay</option>
+     <option value="32">Isparta</option>
+     <option value="33">Mersin</option>
+     <option value="34">İstanbul</option>
+     <option value="35">İzmir</option>
+     <option value="36">Kars</option>
+     <option value="37">Kastamonu</option>
+     <option value="38">Kayseri</option>
+     <option value="39">Kırklareli</option>
+     <option value="40">Kırşehir</option>
+     <option value="41">Kocaeli</option>
+     <option value="42">Konya</option>
+     <option value="43">Kütahya</option>
+     <option value="44">Malatya</option>
+     <option value="45">Manisa</option>
+     <option value="46">Kahramanmaraş</option>
+     <option value="47">Mardin</option>
+     <option value="48">Muğla</option>
+     <option value="49">Muş</option>
+     <option value="50">Nevşehir</option>
+     <option value="51">Niğde</option>
+     <option value="52">Ordu</option>
+     <option value="53">Rize</option>
+     <option value="54">Sakarya</option>
+     <option value="55">Samsun</option>
+     <option value="56">Siirt</option>
+     <option value="57">Sinop</option>
+     <option value="58">Sivas</option>
+     <option value="59">Tekirdağ</option>
+     <option value="60">Tokat</option>
+     <option value="61">Trabzon</option>
+     <option value="62">Tunceli</option>
+     <option value="63">Şanlıurfa</option>
+     <option value="64">Uşak</option>
+     <option value="65">Van</option>
+     <option value="66">Yozgat</option>
+     <option value="67">Zonguldak</option>
+     <option value="68">Aksaray</option>
+     <option value="69">Bayburt</option>
+     <option value="70">Karaman</option>
+     <option value="71">Kırıkkale</option>
+     <option value="72">Batman</option>
+     <option value="73">Şırnak</option>
+     <option value="74">Bartın</option>
+     <option value="75">Ardahan</option>
+     <option value="76">Iğdır</option>
+     <option value="77">Yalova</option>
+     <option value="78">Karabük</option>
+     <option value="79">Kilis</option>
+     <option value="80">Osmaniye</option>
+     <option value="81">Düzce</option>
+    </select>
+
+    <span>E mail:</span><input type="text" placeholder="email adresini giriniz" required>
+    <span>Sifre:</span><input type="password" placeholder="sifre giriniz" required>
+    <span>Telefon:</span><input type="number" placeholder="telefon numarasi giriniz" required>
+    <span>Ögrenim durumu:<select name="Ögrenim durumu:" id=""required>
+          <option value="3">SECINIZ</option>
+          <option value="1">lisans</option>
+          <option value="2">on lisans</option>
+          <option value="4">lise</option>
+        </select></span>
+   
+
+    <p>YABANCI DIL:
+        <label>
+            <input type="checkbox">ingilizce
+        </label>
+        <label>
+            <input type="checkbox">almanca
+        </label>
+        <label>
+            <input type="checkbox">fransizca
+        </label>
+        <label>
+            <input type="checkbox">cince
+        </label>
+        <label>
+            <input type="checkbox">rusca
+        </label>
+        <label>
+            <input type="checkbox">italyanca
+        </label>
+    </p>
+    <p> cinsiyet:
+    <label>
+        <input name="cinsiyet" value="erkek" type="radio" >erkek
+    </label>
+    <label >
+        <input name="cinsiyet" value="kadin" type="radio">kadin
+        </label>
+        </p>
+    </label>
+</fieldset>
+
+    <fieldset><legend align="center"><strong> kurslar bilgileri</strong></legend>
+    <h2>ÖGRENILECEK DIL SECINIZ:</h2>
+    <LAbel for="" required>
+    <input type="radio" value="INGILIZCE">INGILIZCE
+</LAbel>
+ <LAbel for="">
+    <input type="radio" value="ALMANCA">ALMANCA
+ </LAbel>
+   <LAbel for="">
+    <input type="radio" value="FRANIZCA">FRANIZCA
+
+    
+<LAbel for="" >
+    <input type="radio" value="ITALYANCA">ITALYANCA
+</LAbel>
+
+    <h4>ÖGRENILECEK DIL SEVIYESI:
+<label>
+    <input type="checkbox">A1
+</label>
+<label>
+    <input type="checkbox">A2
+</label>
+<label>
+    <input type="checkbox">B1
+</label>
+<label>
+    <input type="checkbox">B2
+</label>
+<label>
+    <input type="checkbox">C1
+</label>
+<label>
+    <input type="checkbox">C2
+</label>
+</h4>
+<p>Diger bilgiler:</p>
+<textarea name="" id="" cols="30" rows="5" placeholder="iletmek istediginiy mesajinizi yazabiirsiniy zorunlu alan degildir"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Formu Kaydet">     
+    
+    
+<input type="reset" value="Temizle">
+
+    
+</form>
+
+    
+
+    <table border="1" width="70%" align="center" >
+        <thead>
+            <tr>
+                <th>ADI</th>
+                <th>SOYADI</th>
+                <th>DOGUM TARIHI</th>
+                <th>DOGUM YERI</th>
+                <th>EMAIL</th>
+                <th>TELEFON</th>
+                <th>EGITIM DURUMU</th>
+                <th>YABANCI DIL BILGISI</th>
+                <th>CINSIYET</th>
+                <th>KURS BILGILERI</th>
+                <th>KURS SEVIYESI</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>mustafa</td>
+                <td>dag</td>
+                <td>13.05.1991</td>
+                <td>kayseri</td>
+                <td>mustafadagda@gmail.com</td>
+                <td>5352562152</td>
+                <td>lisans</td>
+                <td>ingilizce</td>
+                <td>erkek</td>
+                <td>fransizca</td>
+                <td>a2</td>
+            </tr>
+            <tr>
+                <td>vasfiye</td>
+                <td>dag</td>
+                <td>13.051988</td>
+                <td>kayseri</td>
+                <td>vasfiyedag@gmail.com</td>
+                <td>5352566556</td>
+                <td>lise</td>
+                <td>almanca</td>
+                <td>kadin</td>
+                <td>almanca</td>
+                <td>c1</td>
+            </tr>
+            <tr>
+                <td>elif</td>
+                <td>gunes</td>
+                <td>3.02.2005</td>
+                <td>mardin</td>
+                <td>elifgunes@gmail.com</td>
+                <td>5565525152</td>
+                <td>on lisans</td>
+                <td>italyanca</td>
+                <td>kadin</td>
+                <td>ingilizce</td>
+                <td>c1</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    
+</body>
+</html>
