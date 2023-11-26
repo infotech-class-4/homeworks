@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset> <legend align="center">Ogrenci bilgileri</legend>
+    <span>adi:</span><input type="text" placeholder="adinizi giriniz"> 
+    <span>soyadi:</span><input type="text" placeholder="soyadinizi giriniz">
+    <span>Dogum tarihi:</span><input type="date"> <br>
+    <span>Dogum yeri:</span>
+    <select name="iller" id="">
+    <option value="">il seciniz</option>
+    <option value="">istanbul</option>
+    <option value="">ankara</option>
+    <option value="">izmir</option>
+    <option value="">konya</option>
+    
+</select>
+
+    
+    <span>email:</span><input type="password" placeholder="emailinizi giriniz">
+    <span>sifre:</span><input type="password" placeholder="parolanizi giriniz">
+    <span>telefon numarasi:</span><input type="tel" placeholder="telefon numaranizi giriniz">
+
+    <span>Ogrenim durumu:</span>
+    <select name="bachelor" id="">
+        <option value="">seciniz</option>
+        <option value="">lise</option>
+        <option value="">universite</option>
+        <option value="">master</option>
+        <option value="">phd</option></select><br>
+
+        <span>Yabanci dil:</span>
+        <label for=""> <input type="checkbox">ingilizce</label>
+        <label for=""> <input type="checkbox">almanca</label>
+        <label for=""> <input type="checkbox">fransizca</label>
+        <label for=""> <input type="checkbox">cince</label>
+        <label for=""> <input type="checkbox">rusca</label>
+        <label for=""> <input type="checkbox">italyanca</label><br>
+
+        <span>cinsiyet:</span>
+        <label for=""> <input type="radio">erkek</label>
+        <label for=""> <input type="radio">kadin</label>
+    </fieldset><br>
+
+    <fieldset> <legend align="center">Kurslar Bilgileri</legend>
+
+        <h2>OGRENICEK DIL SECINIZ:</h2><br>
+        <label for=""><input type="checkbox">Ingilizce</label>
+        <label for=""><input type="checkbox">Almanca</label>
+        <label for=""><input type="checkbox">Fransizca</label>
+        <label for=""><input type="checkbox">Italyanca</label><br>
+
+        <span>Ogrenilecek dil seviyesi:</span><br>
+        <label for=""><input type="checkbox">A1</label>
+        <label for=""><input type="checkbox">A2</label>
+        <label for=""><input type="checkbox">B1</label>
+        <label for=""><input type="checkbox">B2</label>
+        <label for=""><input type="checkbox">C1</label>
+        <label for=""><input type="checkbox">C2</label><br>
+        <p>Diger Bilgiler:</p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="iletmek istediginiz mesaji yazabilirsiniz.zorunlu alan degildir"></textarea><br>
+    </fieldset>
+    
+        <button>KAYDET</button>
+        <button>TEMIZLE</button><br>
+    <table border="1"> 
+        <thead>
+            <tr>
+            <th>ADI</th>
+            <th>SOYADI</th>
+            <th>DOGUM TARIHI</th>
+            <th>DOGUM YERI</th>
+            <th>EMAIL</th>
+            <th>TELEFON</th>
+            <th>EGITIM DURUMU</th>
+            <th>YABANCI DIL BILGISI</th>
+            <th>CINSIYET</th>
+            <th>KURS BILGILERI</th>
+            <th>OGRENILECEK DIL SEVIYESI</th>
+            
+        </tr>
+
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Selma</td>
+                <td>Yilmaz</td>
+                <td>12.12.1990</td>
+                <td>istanbul</td>
+                <td>sss@gmail.com</td>
+                <td>094638765</td>
+                <td>universite</td>
+                <td>ingilizce</td>
+                <td>kadin</td>
+                <td>italyanca</td>
+                <td>C1</td>
+                
+                
+ </tr>
+ <tr>
+    <td>Mehmet</td>
+    <td>Yilmaz</td>
+    <td>19.10.1990</td>
+    <td>istanbul</td>
+    <td>mst@gmail.com</td>
+    <td>89946638</td>
+    <td>universite</td>
+    <td>ingilizce</td>
+    <td>erkek</td>
+    <td>fransizca</td>
+    <td>A1</td>
+   
+    
+</tr>
+<tr>
+    <td>Tarik</td>
+    <td>Yilmaz</td>
+    <td>12.04.1990</td>
+    <td>istanbul</td>
+    <td>trj@gmail.com</td>
+    <td>8778402873</td>
+    <td>universite</td>
+    <td>almanca</td>
+    <td>erkek</td>
+    <td>ingilizce</td>
+    <td>A2</td>
+    
+    
+</tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
