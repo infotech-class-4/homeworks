@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>h1{text-align: center;}</style>
+</head>
+<body>
+    
+    <h1>KURS BASVURU FORMU</h1>
+
+    <fieldset>
+        <legend align="center"> <strong>Ögrenci bilgileri </strong></legend>
+   <span><strong>Adı:</strong></span> <input type="text" placeholder="isminizi giriniz"> 
+   <span><strong>Soyadı:</strong></span> <input type="text" placeholder="soyadınızı giriniz">  
+   <span><strong>Dogum tarihi:</strong></span> <input type="date"><br> <br>
+
+   <span><strong>Dogum yeri:</strong></span>
+    <select name="Dogum yeri" id="" aria-placeholder="seciniz">
+    <option value=""></option> seçiniz</option>
+    <option value="1">ankara</option>
+    <option value="2">istanbul</option>
+    <option value="3">kayseri</option>
+    <option value="4">antalya</option>
+</select>
+   <span><strong>Emaıl:</strong></span> <input type="text" placeholder="E maıl adresinizi giriniz">
+   <span><strong>Sifre:</strong></span> <input type="password" placeholder="sifrenizi giriniz">
+   <span><strong>Telefon numarası:</strong></span> <input type="tel" placeholder="tel.nu. giriniz"> <br><br><br>
+   <span><strong>ögrenim durumu:</strong></span>
+   <select name="ögrenim durumu" id="" aria-placeholder="seciniz">  
+    <option value=""></option> seçiniz</option>
+    <option value="1">Üniversite</option>
+    <option value="2">Master</option>
+    <option value="3">Doktora</option>
+    <option value="4">Lise</option>
+</select>
+
+  <br><br> <span><strong>Yabancı Dil:</strong></span> 
+
+   <label >
+   <input type="checkbox"> ingilizce
+</label>
+<label >
+   <input type="checkbox"> almanca
+</label>
+<label >
+   <input type="checkbox"> fransızca
+</label>
+
+<label >
+    <input type="checkbox"> rusca 
+ </label>
+ <label >
+    <input type="checkbox"> cince
+ </label>
+ <label >
+    <input type="checkbox"> italyanca
+ </label> 
+<br> <br>   
+<span><strong>cinsiyet:</strong></span>
+<label for="">
+    <input name="cinsiyet" value="erkek" type="radio">erkek
+    </label>
+    
+    <label for="">
+    <input name="cinsiyet" value="kadın" type="radio">kadın
+    </label>
+    </fieldset>
+
+   <fieldset>
+    <legend align="center" ><strong>Kurs Bilgileri</strong></legend>
+
+<h3>ÖGRENİLECEK DİL SECİNİZ</h3>
+<label ><input type="radio"> İngilizce </label>
+<label ><input type="radio"> Almanca </label>
+<label ><input type="radio"> Fransızca </label>
+<label ><input type="radio"> İtalyanca </label>
+<br><br>
+
+    <span><strong>Ögrenilecek Dil Seviyesi:</strong></span> 
+
+    <label ><input type="checkbox"> A1 </label>
+    <label ><input type="checkbox"> A2 </label>
+    <label ><input type="checkbox"> B1 </label>
+    <label ><input type="checkbox"> B2 </label>
+    <label ><input type="checkbox"> C1 </label>
+    <label ><input type="checkbox"> C2 </label>
+
+   <br>
+   <p>Diger Bilgiler</p>
+   <textarea name="" id="" cols="40" rows="10"placeholder="zorunlu alan degıldır, gerekırse doldurunuz."></textarea>
+
+
+
+</fieldset>
+
+
+<input type="reset">
+<button>kaydet</button><br>
+
+<table border="1">
+    <tr>
+        <th> ADI</th>
+        <th>SOYADI</th>
+        <th>DOGUM TARİHİ</th>
+        <th>DOGUM YERİ</th>
+        <th> EMAIL </th>
+        <th>TELEFON </th>
+        <th> EGİTİM DURUMU  </th>
+        <th> YABANCI DİL BİLGİSİ</th>
+        <th> CİNSİYET</th>
+        <th> KURS BİLGİLERİ</th>
+        <th> KURS SEVİYESİ</th>
+
+
+    </tr>
+    <tr>
+        <td> mustafa</td>
+        <td>Dag</td>
+        <td>01.02.1900</td>
+        <td>Dıyarbakır</td>
+        <td>mdag@gmail.com</td>
+        <td>0179123456</td>
+        <td>master</td>
+        <td>almanca</td>
+        <td>erkek</td>
+        <td>ingilizce</td>
+        <td>a1</td>
+        
+        
+        
+    </tr>
+    <tr>
+        <td>Vasfiye</td>
+        <td>Dag</td>
+        <td>01.03.1900</td>
+        <td>ankara</td>
+        <td>vas@gmail.com</td>
+        <td>09004705544</td>
+        <td>lisans</td>
+        <td>almanca</td>
+        <td>kadın</td>
+        <td>almanca</td>
+        <td>b1</td>
+        
+
+    </tr>
+    <tr>
+        <td>Zeynep</td>
+        <td>Dag</td>
+        <td>01.04.1950</td>
+        <td>van</td>
+        <td>zey@gmail.com</td>
+        <td>09008232837</td>
+        <td>doktora</td>
+        <td>almnanca</td>
+        <td>kadın</td>
+        <td>almanca</td>
+        <td>b2</td>
+    </tr>
+</table>
+</body>
+</html>
