@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs Başvuru Formu</title>
+  </head>
+
+  <body>
+    <h1 align="center">KURS BASVURU FORMU</h1>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend align="center"><strong>Ögrenci Bilgileri:</strong></legend>
+        <label for="ad">Adi:</label>
+        <input type="text" id="ad" name="ad" />
+
+        <label for="soyad">Soyadi:</label>
+        <input type="text" id="soyad" name="soyad" />
+
+        <label for="dtarihi">Dogum Tarihi:</label>
+        <input type="date" id="dtarihi" name="dtarihi" /><br /><br />
+
+        <label for="sehir">Dogum yeri:</label>
+        <select name="sehir" id="sehir">
+          <option value="Seciniz">seciniz</option>
+          <option value="Ankara">Ankara</option>
+          <option value="Yozgat">Yozgat</option>
+          <option value="Corum">Corum</option>
+          <option value="Cankiri">Cankiri</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="sifre">Sifre:</label>
+        <input type="password" id="sifre" name="sifre" />
+
+        <label for="telefon">Telefon Numarasi:</label>
+        <input type="tel" id="sifre" name="telefon" />
+
+        <label for="ogrdurum">Ögrenim Durumu:</label>
+        <select name="ogrdurum" id="ogrdurum">
+          <option value="Seciniz">seciniz</option>
+          <option value="Ilk Okul">Ilk Okul</option>
+          <option value="Orta Okul">Orta Okul</option>
+          <option value="Lise">Lise</option>
+          <option value="Universite">Üniversite</option></select
+        ><br /><br />
+
+        <span>Yabanci Dil:</span>
+        <input type="checkbox" id="ingilizce" name="dil1" value="ingilizce" />
+        <label for="dil1"> Ingilizce</label>
+        <input type="checkbox" id="almanca" name="dil2" value="almanca" />
+        <label for="dil2"> Almanca</label>
+        <input type="checkbox" id="fransizca" name="dil3" value="fransizca" />
+        <label for="dil3"> Fransizca</label>
+        <input type="checkbox" id="cince" name="dil4" value="cince" />
+        <label for="dil4"> Cince</label>
+        <input type="checkbox" id="rusca" name="dil5" value="rusca" />
+        <label for="dil5"> Rusca</label>
+        <input type="checkbox" id="italyanca" name="dil6" value="italyanca" />
+        <label for="dil6"> Italyanca</label><br /><br />
+
+        <span>Cinsiyet:</span>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek" />
+        <label for="cinsiyetE"> erkek</label>
+        <input type="radio" id="kadin" name="cinsiyet" value="kadin" />
+        <label for="cinsiyetK"> kadin</label>
+      </fieldset>
+
+      <fieldset>
+        <legend align="center"><strong>Kurslar Bilgileri:</strong></legend>
+        <h3>OGRENILECEK DIL SECINIZ:</h3>
+        <input type="checkbox" id="ingilizce" name="dil1" value="ingilizce" />
+        <label for="dil1"> Ingilizce</label>
+        <input type="checkbox" id="almanca" name="dil2" value="almanca" />
+        <label for="dil2"> Almanca</label>
+        <input type="checkbox" id="fransizca" name="dil3" value="fransizca" />
+        <label for="dil3"> Fransizca</label>
+        <input type="checkbox" id="italyanca" name="dil4" value="italyanca" />
+        <label for="dil4"> Italyanca</label><br /><br />
+
+        <span><strong>Ögrenilecek Dil seviyesi:</strong></span>
+        <input type="checkbox" id="a1" name="seviye_a1" value="a1" />
+        <label for="seviye_a1"> A1</label>
+        <input type="checkbox" id="a2" name="seviye_a2" value="a2" />
+        <label for="seviye_a2"> A2</label>
+        <input type="checkbox" id="b1" name="seviye_b1" value="b1" />
+        <label for="seviye_b1"> B1</label>
+        <input type="checkbox" id="b2" name="seviye_b2" value="b2" />
+        <label for="seviye_b2"> B2</label>
+        <input type="checkbox" id="c1" name="seviye_c1" value="c1" />
+        <label for="seviye_c1"> C1</label>
+        <input type="checkbox" id="c2" name="seviye_c2" value="c2" />
+        <label for="seviye_c2"> C2</label><br /><br />
+
+        <p>Diger Bilgiler:</p>
+        <textarea
+          id="digerBilgiler"
+          name="digerBilgiler"
+          rows="3"
+          cols="50"
+        ></textarea
+        ><br /><br />
+      </fieldset>
+    </form>
+    <div>
+      <br /><br />
+      <button>KAYDET</button>
+      <button>TEMIZLE</button>
+      <br /><br />
+    </div>
+    <div>
+      <table class="center" border="3">
+        <tr>
+          <th>ADI</th>
+          <th>SOYADI</th>
+          <th>DOGUM TARIHI</th>
+          <th>DOGUM YERI</th>
+          <th>EMAIL</th>
+          <th>TELEFON</th>
+          <th>EGITIM DURUMU</th>
+          <th>YABANCI DIL BILGISI</th>
+          <th>CINSIYET</th>
+          <th>KURS BILGILERI</th>
+          <th>KURS SEVIYESI</th>
+        </tr>
+        <tr>
+          <td>Mustafa</td>
+          <td>Dag</td>
+          <td>02.01.2012</td>
+          <td>Kayseri</td>
+          <td>test@test.com</td>
+          <td>1425635254</td>
+          <td>Lise</td>
+          <td>Ingilizce</td>
+          <td>Erkek</td>
+          <td>fransizca</td>
+          <td>a1</td>
+        </tr>
+        <tr>
+          <td>Ahmet</td>
+          <td>Kar</td>
+          <td>02.01.2012</td>
+          <td>Kayseri</td>
+          <td>test@test.com</td>
+          <td>1425635254</td>
+          <td>Lise</td>
+          <td>Ingilizce</td>
+          <td>Erkek</td>
+          <td>fransizca</td>
+          <td>a1</td>
+        </tr>
+        <tr>
+          <td>Kasim</td>
+          <td>Nar</td>
+          <td>02.01.2012</td>
+          <td>Kayseri</td>
+          <td>test@test.com</td>
+          <td>1425635254</td>
+          <td>Lise</td>
+          <td>Ingilizce</td>
+          <td>Erkek</td>
+          <td>fransizca</td>
+          <td>a1</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
