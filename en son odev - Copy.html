@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kurs basvuru formu</title>
+</head>
+<h1 align="center">KURS BASVURU FORMU</h1>
+<body>
+    <form>
+    <fieldset>
+       <legend align="center"><strong>Ögrenci Bilgileri</strong></legend>
+<span>Adı:</span><input type="text" placeholder="adınızı giriniz" required>
+<span>Soyadı:</span><input type="text" placeholder="soyadınızı giriniz" required>
+<span>Dogum Tarihi:</span><input type="date" placeholder="" required>
+<br>
+<br>
+<span>Dogum yeri:</span>
+<select name="doğum yeri" id="">
+    <option value="">seçiniz</option>
+    <option value="">istanbul</option>
+    <option value="">ankara</option>
+    <option value="">izmir</option>
+    <option value="">bursa</option>
+</select>
+<span>e-mail:</span><input type="email" placeholder="e-mail adresinizi giriniz">
+<span>sifre:</span><input type="password" placeholder="sifrenizi giriniz">
+<span>telefon numarasi:</span><input type="tel" placeholder="telefon numaranizi giriniz">
+<span>ogrenim durumu:</span>
+<select name="ögrenim durumu" id="">
+        <option value="">seçiniz</option>
+        <option value="">ilkokul</option>
+        <option value="">lise</option>
+        <option value="">üniversite</option>
+        <option value="">yükseklisans</option>
+</select>
+<br>
+<br>
+<span>Yabanci dil:</span>
+<label ><input type="checkbox"> ingilizce</label>
+<label ><input type="checkbox"> almanca</label>
+<label ><input type="checkbox"> fransizca</label>
+<label ><input type="checkbox"> çince</label>
+<label ><input type="checkbox"> rusca</label>
+<label ><input type="checkbox"> italyanca</label>
+<br>
+<br>
+<span>cinsiyet:</span>
+<label ><input name="cinsiyet" type="radio"> kadın</label>
+<label ><input name="cinsiyet" type="radio"> erkek</label>
+<br>
+</fieldset>
+<br>
+<fieldset>
+    <legend align="center"><strong>Kurslar Bilgileri</strong></legend>
+
+<h2>ÖĞRENİLECEK DİL SEÇİNİZ:</h2>
+<br>
+<label ><input name="" type="radio"> ingilizce</label>
+<label ><input name="" type="radio"> almanca</label>
+<label ><input name="" type="radio"> fransızca</label>
+<label ><input name="" type="radio"> italyanca</label>
+<br>
+<br>
+<span><strong> Ögrenilecek Dil Seviyesi:</strong></span>
+<label ><input type="checkbox"> A1</label>
+<label ><input type="checkbox"> A2</label>
+<label ><input type="checkbox"> B1</label>
+<label ><input type="checkbox"> B2</label>
+<label ><input type="checkbox"> C1</label>
+<label ><input type="checkbox"> C2</label>
+<br>
+<h3>Diğer Bilgiler</h3>
+<br>
+<textarea name="" id="" cols="65" rows="7" placeholder="iletmek istediğiniz mesajınızı yazabilirsiniz zorunlu alan değildir."></textarea>
+<br>
+</fieldset>
+
+<br>
+
+<input type="submit" value="Formu Kaydet">
+<input type="reset" value="Temizle">
+</form>
+<br>
+<br>
+<table border="4" align="center">
+
+    <thead>
+<tr>
+    <th>ADI</th>
+    <th>SOYADI</th>
+    <th>DOĞUM TARİHİ</th>
+    <th>DOĞUM YERİ</th>
+    <th>E-MAİL</th>
+    <th>TELEFON</th>
+    <th>EĞİTİM DURUMU</th>
+    <th>YABANCI DİL BİLGİSİ</th>
+    <th>CİNSİYET</th>
+    <th>KURS BİLGİLERİ</th>
+    <th>KURS SEVİYESİ</th>
+</tr>
+
+    </thead>
+
+    <tbody>
+        <tr>
+
+            <td>ahmet</td>
+            <td>dag</td>
+            <td>13.05.1991</td>
+            <td>kayseri</td>
+            <td>mustafadag@hotmail.com</td>
+            <td>535353353</td>
+            <td>lisans</td>
+            <td>ingilizce</td>
+            <td>erkek</td>
+            <td>fransızca</td>
+            <td>a2</td>
+        </tr>
+
+        <tr>
+
+            <td>vasfiye</td>
+            <td>dag</td>
+            <td>13.05.1988</td>
+            <td>kayseri</td>
+            <td>vasfiyedag@hotmail.com</td>
+            <td>5352424353</td>
+            <td>lise</td>
+            <td>almanca</td>
+            <td>kadın</td>
+            <td>almanca</td>
+            <td>c1</td>
+        </tr>
+
+        <tr>
+
+            <td>elif</td>
+            <td>güneş</td>
+            <td>3.02.1988</td>
+            <td>mardin</td>
+            <td>elifgunes@gmail.com</td>
+            <td>5462424346</td>
+            <td>ön lisans</td>
+            <td>italyanca</td>
+            <td>kadın</td>
+            <td>ingilizce</td>
+            <td>c1</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</body>
+
+</html>
