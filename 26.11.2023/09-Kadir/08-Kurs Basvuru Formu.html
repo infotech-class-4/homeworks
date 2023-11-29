@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 align="center">KURS BASVURU FORMU</h1>
+    <form action="">
+      <fieldset>
+        <!-- fieldset => Adi, soyadi ve pass'i grublandirmak icin -->
+        <legend align="center"><b>Ögrenci Bilgileri</b></legend>
+        <!-- legend=> fieldset grubu icin içeriği için bir başlık yapar-->
+        <label>Adi:</label> <input type="text" placeholder="Adinizi giriniz" required />
+        <label>Soyadi:</label> <input type="text" placeholder="Soyadinizi giriniz" required/>
+        <label>Dogum Tarihi:</label> <input type="date" name="" id="" required/>
+        <br /><br />
+        <label>Dogum Yeri:</label>
+        <select name="iller" id="">
+          <option value="">seciniz</option>
+          <option value="1">Ankara</option>
+          <option value="2">Istanbul</option>
+          <option value="3">Adana</option>
+          <option value="4">Izmir</option>
+        </select>
+        <label>email:</label>
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="email adresinizi giriniz"
+        />
+        <label>Sifre:</label>
+        <input type="password" placeholder="sifre giriniz" />
+        <label>Telefon numarasi:</label>
+        <input
+          type="tel"
+          name=""
+          id=""
+          placeholder="telefon numarasi giriniz"
+        />
+        <label>Ögrenim Durumu:</label>
+        <select name="ögrenim" id="">
+          <option value="">seciniz</option>
+          <option value="1">ilkokul</option>
+          <option value="2">ortaokul</option>
+          <option value="3">lise</option>
+          <option value="4">ön lisans</option>
+          <option value="5">lisans</option>
+          <option value="6">yüksek lisans</option>
+          <option value="7">doktora</option>
+        </select>
+        <br /><br />
+        <span>Yabanci Dil:</span>
+        <label> <input type="checkbox" name="" id="" /> Ingilizce </label>
+        <label> <input type="checkbox" name="" id="" /> Almanca </label>
+        <label> <input type="checkbox" name="" id="" /> Fransizca </label>
+        <label> <input type="checkbox" name="" id="" /> Cince </label>
+        <label> <input type="checkbox" name="" id="" /> Rusca </label>
+        <label> <input type="checkbox" name="" id="" /> Italyanca </label>
+        <br /><br />
+        <!--Cinsiyet gibi tek bir secenek durumunda input'larin name'i ayni olmali-->
+        <!--radio button'da value'ye deger verilmeli-->
+        <span>Cinsiyet: </span>
+        <label>
+          <input type="radio" name="cinsiyet" value="Erkek" />Erkek
+        </label>
+        <label>
+          <input type="radio" name="cinsiyet" value="Kadin" />Kadin
+        </label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend align="center"><b>Kurs Bilgileri</b></legend>
+        <h3>ÖGRENILECEK DIL SECINIZ</h3>
+        <label><input type="radio" name="dil" id="Ingilizce" />Ingilizce</label>
+        <label><input type="radio" name="dil" id="Almanca" />Almanca</label>
+        <label><input type="radio" name="dil" id="Fransizca" />Fransizca</label>
+        <label><input type="radio" name="dil" id="Italyanca" />Italyanca</label>
+        <br /><br />
+
+        <span style="font-weight: bold">Ögrenilecek Dil Seviyesi:</span>
+        <label> <input type="checkbox" name="A1" id="" /> A1 </label>
+        <label> <input type="checkbox" name="A2" id="" /> A2 </label>
+        <label> <input type="checkbox" name="B1" id="" /> B1 </label>
+        <label> <input type="checkbox" name="B2" id="" /> B2 </label>
+        <label> <input type="checkbox" name="C1" id="" /> C1 </label>
+        <label> <input type="checkbox" name="C2" id="" /> C2 </label>
+        <br /><br />
+
+        <p>Diger Bilgiler:</p>
+        <textarea
+          name="mesaj"
+          id=""
+          cols="60"
+          rows="4"
+          placeholder="iletmek istediginiz mesajinizi yazabilirsiniz, zorunlu alan degildir"
+        ></textarea>
+      </fieldset>
+
+      <br />
+
+      <input type="submit" value="KAYDET" />
+      <input type="reset" value="TEMIZLE" />
+    </form>
+
+    <br /><br />
+
+    <table border="1" align="center">
+      <thead style="text-transform: uppercase">
+        <tr>
+          <th>adi</th>
+          <th>soyadi</th>
+          <th>dogum tarihi</th>
+          <th>dogum yeri</th>
+          <th>email</th>
+          <th>telefon</th>
+          <th>egitim durumu</th>
+          <th>yabanci dil bilgisi</th>
+          <th>cinsiyet</th>
+          <th>kurs bilgileri</th>
+          <th>kurs seviyesi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmet</td>
+          <td>Demir</td>
+          <td>24.05.1977</td>
+          <td>Üsküdar</td>
+          <td>ahmetdemir@infotechacademy.com</td>
+          <td>+49173554477</td>
+          <td>lisans</td>
+          <td>Almanca</td>
+          <td>Erkek</td>
+          <td>Fransizca</td>
+          <td>B1</td>
+        </tr>
+        <tr>
+          <td>Ayse</td>
+          <td>Demir</td>
+          <td>18.09.1978</td>
+          <td>Fatih</td>
+          <td>aysedemir@infotechacademy.com</td>
+          <td>+49173882255</td>
+          <td>lisans</td>
+          <td>Ingilizce</td>
+          <td>Kadin</td>
+          <td>Italyanca</td>
+          <td>B2</td>
+        </tr>
+        <tr>
+          <td>Mehmet</td>
+          <td>Demir</td>
+          <td>05.12.2010</td>
+          <td>Kadiköy</td>
+          <td>mehmetdemir@infotechacademy.com</td>
+          <td>+49173990011</td>
+          <td>ilkokul</td>
+          <td>Fransizca</td>
+          <td>Erkek</td>
+          <td>Almanca</td>
+          <td>A1</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
