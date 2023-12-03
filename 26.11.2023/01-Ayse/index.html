@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.hafta odevi</title>
+</head>
+<body>
+    <h1 align="center"><strong>KURS BASVURU FORMU</strong></h1>
+<fieldset>  <legend align="center"><strong>Ogrenci Bilgileri</strong></legend> 
+<span>Adi:</span><input type="text" placeholder="adinizi giriniz">  <span>Soyadi:</span>
+ <input type="text" placeholder="soyadinizi giriniz"> <span>Dogum Tarihi:</span>
+ <input type="number" placeholder="gg.aa.yyyy">
+ <br><br>
+ <span>Dogum Yeri:</span> 
+ <select name="iller" id=""> 
+    <option value="">il seciniz</option>
+    <option value="1">ankara</option>
+    <option value="2">istanbul</option>
+    <option value="3">izmir</option>
+    <option value="4">kayseri</option>
+    <option value="5">erzurum</option>
+</select>  
+
+<span>Email</span>  <input type="text" placeholder="email adresinizi giriniz">  
+<span>Sifre</span> <input type="password" placeholder="sifre giriniz">
+<span>Telefon Numarasi</span>  <input type="number" placeholder="telefon numaranizi giriniz">  
+<span>Ogrenim Durumu</span>
+<select name="ogrenim durumu" id=""> 
+    <option value="">seciniz</option>
+    <option value="1">ortaokul</option>
+    <option value="2">lise</option>
+    <option value="3">lisans</option>
+    <option value="4">master</option>
+    <option value="5">doktora</option>
+</select>  
+<br><br>
+<label>
+    <span>Yabanci Dil</span>
+    <input type="checkbox"> Ingilizce
+    <input type="checkbox"> Almanca
+    <input type="checkbox"> Fransizca
+    <input type="checkbox"> Cince
+    <input type="checkbox"> Rusca
+    <input type="checkbox"> Turkce
+    
+    </label>
+    <br><br>
+    <span>Cinsiyet</span>
+    <label>
+    <input name="Cinsiyet" value="erkek" type="radio"> erkek
+    <input name="Cinsiyet" value="bayan" type="radio"> bayan
+</label>
+<br>
+</fieldset>
+<br>
+<fieldset>  <legend align="center"><strong>Kurs Bilgileri</strong></legend> 
+ <span>OGRENILECEK DIL SECINIZ</span>
+ <label>
+<input name="dil" value="Inglizce" type="radio"> Inglizce
+<input name="dil" value="Almanca" type="radio"> Almanca
+<input name="dil" value="Fransizca" type="radio"> Fransizca
+<input name="dil" value="Italyanca" type="radio"> Italyanca
+</label>
+<br><br>
+<label>
+<span>Ogrenilecek Dil Seviyesi</span><input type="checkbox"> A1
+<input type="checkbox"> A2
+<input type="checkbox"> B1
+<input type="checkbox"> B2
+<input type="checkbox"> C1
+<input type="checkbox"> C2
+
+</label>
+<br><br>
+<p>Diger Bilgiler</p>
+<textarea placeholder="Iletmek istediginiz bilgileri giriniz. Zorunlu alan degildir." cols="60" rows="10"></textarea>
+<br><br>
+</fieldset>
+<button>KAYDET</button><BUTTON>TEMIZLE</BUTTON>
+<br><br>
+ <table border="4" width="100%">
+        <thead> 
+<tr>
+    <th>ADI</th>
+    <th>SOYADI</th>
+    <th>DOGUM TARIHI</th>
+    <th>DOGUM YERI</th>
+    <th>EMAIL</th>
+    <th>TELEFON</th>
+    <th>EGITIM DURUMU</th>
+    <th>YABANCI DIL BILGISI</th>
+    <th>CINSIYET</th>
+    <th>KURS BILGILERI</th>
+    <th>KURS SEVIYESI</th>
+    
+</tr>
+        </thead>
+        <body>
+            <tr>
+                <td>Mustafa</td>
+                <td>Dag</td>
+                <td>13.05.1991</td>
+                <td>Kayseri</td>
+                <td>mustafadagda@gmail.com</td>
+                <td>5352562152</td>
+                <td>Lisans</td>
+                <td>ingilizce</td>
+                <td>Erkek</td>
+                <td>Fransizca</td>
+                <td>A2</td>
+            </tr>
+
+            <tr>
+                <td>Vasfiye</td>
+                <td>Dag</td>
+                <td>13.05.1988</td>
+                <td>Kayseri</td>
+                <td>vasfiyedag@gmail.com</td>
+                <td>5352566556</td>
+                <td>Lise</td>
+                <td>Almanca</td>
+                <td>Kadin</td>
+                <td>Almanca</td>
+                <td>C1</td>
+            </tr>
+
+            <tr>
+                <td>Elif</td>
+                <td>Gunes</td>
+                <td>03.02.2005</td>
+                <td>Mardin</td>
+                <td>elifgunes@gmail.com</td>
+                <td>5565525152</td>
+                <td>On lisans</td>
+                <td>Italyanca</td>
+                <td>Kadin</td>
+                <td>Ingilizce</td>
+                <td>C1</td>
+            </tr>
+        </body>
+    </table>
+    <h2></h2>
+    <p></p>
+</body>
+</html>
