@@ -1,0 +1,142 @@
+body{
+    background-color: darkgrey;
+}
+.box{
+    text-align: center;
+    /* padding: 20px; */
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.kutular {
+    display: grid;
+    /* grid-template: 150px 200px / 300px 3fr 1fr; */
+    grid-gap: 5px 5px;
+    grid-template-areas: 
+        "A A A"
+        "B B C"
+        "D E C"
+        "F F F"
+
+}
+.box1{   
+    background-color:rgb(58, 25, 58);  
+    grid-area: A;
+}
+.box2{    
+    background-color:rgb(187, 171, 152);
+    grid-area: B;
+}
+.box3{    
+    background-color: rgb(2, 41, 2);
+    grid-area: C;
+}
+.box4{   
+    background-color: yellow;
+    grid-area: D;
+}
+.box5{
+    background-color: blue;   
+    grid-area: E;
+    color: white;
+}
+.box6{
+    background-color: rgb(43, 7, 37)(247, 0, 255); 
+    grid-area: F;
+}
+
+.kutular .box1 nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.kutular .box1 nav ul li:hover{
+    background-color:rgb(238, 229, 229);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.kutular .box1 nav ul li a:hover{
+    font-size: 20px;
+}
+.kutular .box1 nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+#icon{
+    display: none;
+}
+
+
+@media screen and (max-width:768px){
+    body{background-image: url(./photo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    }
+    .kutular {
+        opacity: 0.5;
+        grid-gap: 5px 5px;
+        grid-template-areas: 
+            "A A A"
+            "B B B"
+            "C C C"
+            "D D D"
+            "E E E"
+            "F F F"
+
+             }
+            .box1{   
+                background-color: rgb(221, 107, 154);  
+                grid-area: A;
+            }
+            .box2{    
+                background-color: rgb(153, 73, 73);
+                grid-area: B;
+            }
+            .box3{    
+                background-color: peru;
+                grid-area: C;
+            }
+            .box4{   
+                background-color: greenyellow;
+                grid-area: D;
+            }
+            .box5{
+                background-color: blue;   
+                grid-area: E;
+            }
+            .box6{
+                background-color: red; 
+                grid-area: F;
+            }
+
+    .box1{
+        background-color: burlywood;
+    }
+    .kutular .box1 nav ul{
+        flex-direction: column;
+    }
+    .kutular .box1 nav ul li:nth-child(3){
+        display: none;
+    }
+    .kutular .box1 nav ul li:nth-child(5){
+        display: none;
+    }
+    .kutular .box1 nav ul li:nth-child(6){
+        display: none;
+    }
+    .kutular .box1 nav ul li a{
+        color: black;
+    }
+
+    .kutular .box2 .foto{
+        display: none;
+
+    }
+    #icon{
+        display: block;}
+
+
+ }
