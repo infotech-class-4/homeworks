@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Odev</title>
+</head>
+
+<body>
+    <center>
+        <h2> KURS BASVURU FORMU</h2>
+    </center>
+    <form name="Ogrenci Bilgileri">
+        <fieldset>
+            <legend align="center"><b>Ogrenci bilgileri</b> </legend>
+            <label>Adi:</label> <input type="text" name="Adi" placeholder="adinizi giriniz" required>
+            <label>Soyadi:</label> <input type="text" name="Soyadi" placeholder="Soyadinizi giriniz" required>
+            <label>Dogun Tarihi:</label> <input type="date" name="dogumtarihi">
+            <br> <br>
+            Dogum yeri : <select name="dogumyeri" id="">
+                <option value="">Seciniz</option>
+                <option value="1">Ankara</option>
+                <option value="2">Bursa</option>
+                <option value="3">Diyarbakir</option>
+                <option value="4">Gaziantep</option>
+                <option value="5">SanliUrfa</option>
+                <option value="6">Istanbul</option>
+            </select>
+            <label>email:</label> <input type="email" name="email" placeholder="email adresinizi giriniz">
+            <label>Sifre:</label> <input type="password" name="sifre" placeholder="sifrenizi giriniz">
+            <label>Telefon Numarasi :</label> <input type="number" name="telefon"
+                placeholder="telefon numarasi giriniz">
+            <label>Ogrenim durumu:</label> <select name="ogrenimdurumu" id="">
+                <option value="">Seciniz</option>
+                <option value="1">Ortaokul</option>
+                <option value="2">Lise</option>
+                <option value="3">Onlisans</option>
+                <option value="4">Lisans</option>
+                <option value="5">Yuksek Lisans</option>
+                <option value="6">Doktora</option>
+            </select>
+            <br> <br>
+            Yabanci Dil:
+            <input id="ingilizce" type="checkbox" value="Ingilizce" name="dil">
+            <label for="ingilizce">Ingilizce</label>
+            <input id="Almanca" type="checkbox" value="Almanca" name="dil">
+            <label for="Almanca">Almanca</label>
+            <input id="Fransizca" type="checkbox" value="Fransizca" name="dil">
+            <label for="Fransizca">Fransizca</label>
+            <input id="Cince" type="checkbox" value="Cince" name="dil">
+            <label for="Cince">Cince</label>
+            <input id="Rusca" type="checkbox" value="Rusca" name="dil">
+            <label for="Rusca">Rusca</label>
+            <input id="italyanca" type="checkbox" value="Italyanca" name="dil">
+            <label for="italyanca">Italyanca</label>
+            <br> <br>
+            Cinsiyet : <input id="erkek" type="radio" value="erkek" name="cinsiyet">
+            <label for="erkek">Erkek</label>
+            <input id="bayan" type="radio" value="bayan" name="cinsiyet">
+            <label for="bayan">Bayan</label>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend align="center"> <b>Kurs bilgileri</b></legend>
+
+            <h3>Ogrenilecek Dil Seciniz </h3>
+
+            <input id="ingilizce" type="radio" value="ogrenecekIngilizce" name="ogrenilecek dil">
+            <label for="ingilizce">Ingilizce</label>
+            <input id="Almanca" type="radio" value="ogrenecekAlmanca" name="ogrenilecek dil">
+            <label for="Almanca">Almanca</label>
+            <input id="Fransizca" type="radio" value="ogrenecekFransizca" name="ogrenilecek dil">
+            <label for="Fransizca">Fransizca</label>
+            <input id="italyanca" type="radio" value="ogrenecekItalyanca" name="ogrenilecek dil">
+            <label for="italyanca">Italyanca</label>
+            <br> <br>
+            <b>Ogrenilecek Dil seviyesi</b>
+            <input id="A1" type="checkbox" value="ogrenecekdil seviyesi A1 " name="dil seviyesi">
+            <label for="A1">A1</label>
+            <input id="A2" type="checkbox" value="ogrenecekdil seviyesi A2" name="dil seviyesi">
+            <label for="A2">A2</label>
+            <input id="B1" type="checkbox" value="ogrenecekdil seviyesi B1" name="dil seviyesi">
+            <label for="B1">B1</label>
+            <input id="B2" type="checkbox" value="ogrenecekdil seviyesi B2" name="dil seviyesi">
+            <label for="B2">B2</label>
+            <input id="C1" type="checkbox" value="ogrenecekdil seviyesi C1" name="dil seviyesi">
+            <label for="C1">C1</label>
+            <input id="C2" type="checkbox" value="ogrenecekdil seviyesi C2" name="dil seviyesi">
+            <label for="C2">C2</label>
+            <br> <br>
+            Diger Bilgiler :
+            <br> <br>
+            <textarea placeholder="iletmek istediginiz mesajinizi yazabilirsiniz zorunlu degildir" name="mesaj" id=""
+                cols="80" rows="8">
+
+</textarea>
+
+        </fieldset>
+        <br> <br>
+        <input type="submit" value="KAYDET">
+        <input type="reset" value="TEMIZLE">
+
+
+    </form>
+    <br> <br>
+
+  
+        <table border="1">
+            <thead>
+                <tr>
+                    <th> Adi</th>
+                    <th> Soyadi</th>
+                    <th> Dogum Tarihi</th>
+                    <th> Dogum Yeri</th>
+                    <th> Email</th>
+                    <th> Telefon</th>
+                    <th> Egitim Durumu</th>
+                    <th> Yabanci Dil</th>
+                    <th> Cinsiyet</th>
+                    <th> Kurs Bilgileri</th>
+                    <th> Kurs Seviyesi</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <td>Mustafa</td>
+                <td>Dag</td>
+                <td>13.05.1991</td>
+                <td>Kayseri</td>
+                <td>mustafadagda@gmail.com</td>
+                <td>5352562152</td>
+                <td>Lisans</td>
+                <td>Ingilizce</td>
+                <td>Erkek</td>
+                <td>Fransizca</td>
+                <td>A2</td>
+
+            </tbody>
+            <tbody>
+                <td>Mustafa</td>
+                <td>Dag</td>
+                <td>13.05.1991</td>
+                <td>Kayseri</td>
+                <td>mustafadagda@gmail.com</td>
+                <td>5352562152</td>
+                <td>Lisans</td>
+                <td>Ingilizce</td>
+                <td>Erkek</td>
+                <td>Fransizca</td>
+                <td>A2</td>
+
+            </tbody>
+            <tbody>
+                <td>Mustafa</td>
+                <td>Dag</td>
+                <td>13.05.1991</td>
+                <td>Kayseri</td>
+                <td>mustafadagda@gmail.com</td>
+                <td>5352562152</td>
+                <td>Lisans</td>
+                <td>Ingilizce</td>
+                <td>Erkek</td>
+                <td>Fransizca</td>
+                <td>A2</td>
+
+            </tbody>
+
+
+        </table>
+   
+</body>
+
+</html>
