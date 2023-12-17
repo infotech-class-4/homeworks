@@ -3,92 +3,158 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-header {
-  grid-area: header;
-  display: flex;
-  border-radius: 10px;
-  background-color: aquamarine;
-}
-
 header > * {
   flex-grow: 1;
 }
 
-header nav ul {
+.links {
   display: flex;
-  list-style-type: none;
-  background-color: blueviolet;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+}
+
+.links:hover {
+  display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
-}
-
-header ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-header ul li:hover{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10;
   font-size: 20px;
-  transition. .5s;
+  transition: 0.5s;
   background-color: blueviolet;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
-figure img{
+
+figure img {
   width: 20rem;
   height: 20rem;
   border-radius: 10px;
 }
 
-figure{
-  text-align: center;
+figure {
+  display: flex;
+  justify-content: center;
 }
 
-body{
+body {
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(4,auto);
-  grid-template-rows: 70px repeat((4,minmax(70px,auto)));
-  grid-template-areas: 
-  
-  "header header header header"
-  "main main main aside1"
-  "main main main aside1"
-  "main main main aside1"
-  "aside2 main main aside1"
-  "aside2  section section aside1"
-  "footer footer footer footer"
-  ;
+  gap: 5px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 70px repeat(4, minmax(70px, auto)) 90px;
+  grid-template-areas:
+    "header header header header"
+    "main main main aside1"
+    "main main main aside1"
+    "main main main aside1"
+    "aside2 section section aside1"
+    "footer footer footer footer";
+}
+h1,
+h2 {
+  padding: 10px;
+}
+.my-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 10px;
+  grid-area: header;
 }
 
-.aside1{
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  background: rgb(127, 157, 255);
+  border-radius: 10px;
+}
+
+.my-navbar {
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.my-navbarUls {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.my-main {
+  grid-area: main;
+  background: rgb(255, 127, 249);
+  border-radius: 10px;
+}
+.my-aside1 {
   grid-area: aside1;
-  background-color: brown;
+  background: brown;
   border-radius: 10px;
-
 }
 
-.aside2{
+.my-aside2 {
   grid-area: aside2;
-  background-color: brown;
+  background: brown;
   border-radius: 10px;
 }
 
-main{
-  .aside1{
-    grid-area: aside1;
-    background-color: rgb(244,7,7);
-    border-radius: 10px;
+.my-section {
+  grid-area: section;
+  background: rgb(127, 255, 144);
+  border-radius: 10px;
+}
+
+.my-footer {
+  grid-area: footer;
+  background: aquamarine;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background-image: url(manzara.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    grid-template-areas:
+      "header header header header"
+      "aside1 aside1 aside1 aside1"
+      "main main main main"
+      "section section section section"
+      "footer footer footer footer";
+  }
+
+  .my-header {
+    flex-direction: column;
+  }
+
+  .my-aside2 {
+    display: none;
+  }
+
+  .my-aside1 {
+    opacity: 0.4;
+  }
+
+  .my-main {
+    opacity: 0.5;
+  }
+
+  figure {
+    display: none;
+  }
+  .my-header h1 {
+    text-align: center;
   }
 }
