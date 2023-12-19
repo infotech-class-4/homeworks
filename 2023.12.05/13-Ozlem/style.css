@@ -1,0 +1,183 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ header {
+     display: flex;
+     border-radius: 10px;
+     background-color: rgb(116, 195, 231);
+     grid-area: header;
+ }
+
+ header>* {
+     flex-grow: 1;
+     /* kutularin kaplayacagi alani belirtiriz.sen 3 birim kapla digerleri de esit bir sekilde kalan alani kaplasin gibi. Burda herbirisi 1 birim kaplasin dedik */
+ }
+
+
+
+ nav h1 {
+     font-size: 40px;
+
+ }
+
+ header nav ul {
+
+     list-style: none;
+     background-color: rgb(48, 166, 212);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     border-radius: 10px;
+ }
+
+ header ul li {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+ }
+
+ nav ul li:hover {
+     transition: .5s;
+     background-color: rgb(89, 62, 236);
+     font-size: 20px;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     font-size: larger;
+     color: rgb(44, 20, 20);
+
+
+ }
+
+
+
+
+ main {
+
+     background-color: rgb(159, 205, 236);
+     border-radius: 10px;
+
+     grid-area: main;
+
+ }
+
+
+
+ figure img {
+     width: 40rem;
+     height: 20rem;
+     border-radius: 10px;
+
+ }
+
+ figure {
+     text-align: center;
+ }
+
+
+ body {
+     height: 100vh;
+     display: grid;
+     gap: 5px;
+     grid-template-columns: repeat(4, auto);
+     grid-template-rows: 70px repeat(4, minmax(70px, auto)) 90px;
+     grid-template-areas:
+         "header header header header"
+         "main main main aside_one"
+         "main main main aside_one"
+         "main main main aside_one"
+         "aside_two section section aside_one"
+         "footer footer footer footer";
+ }
+
+
+
+
+ #aside_one {
+     background-color: hsla(204, 83%, 66%, 0.911);
+     border-radius: 10px;
+     grid-area: aside_one;
+ }
+
+
+
+ #aside_two {
+     background-color: rgb(154, 154, 252);
+     border-radius: 10px;
+     grid-area: aside_two;
+
+
+ }
+
+ section {
+     background-color: rgb(113, 88, 253);
+
+     border-radius: 10px;
+     grid-area: section;
+ }
+
+
+
+ footer {
+     background-color: rgb(109, 109, 206);
+
+
+     border-radius: 10px;
+     grid-area: footer;
+ }
+
+
+ /* kuculunce resim arka plan resmi olsun ve aside_one gozukmesin istiyorum */
+ @media screen and (max-width:768px) {
+     body {
+         grid-template-areas:
+             "header header header header"
+             "aside_one aside_one aside_one aside_one"
+             "main main main main"
+             "main main main main"
+             "section section section section"
+             "footer footer footer footer";
+
+
+         background-image: url(istanbul-3551596_640.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+     header {
+         flex-direction: column;
+     }
+
+     #aside_two {
+         display: none;
+     }
+
+     #aside_one {
+         opacity: .4;
+         margin-top: 3rem;
+     }
+
+
+     main {
+         opacity: .4;
+     }
+
+     figure {
+         display: none;
+     }
+
+     header h1 {
+         text-align: center;
+         margin-bottom: 1rem;
+     }
+ }

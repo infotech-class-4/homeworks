@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+      @media only screen and (max-width: 576px) {
+        .formsearch {
+          display: none;
+        }
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+<nav class="navbar-expand-md navbar bg-info fixed-top">
+        
+        <form  class="d-flex col-md-4 order-md-1 " role="search">
+          <input class="form-control me-1 formsearch" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger formsearch" type="submit">Search</button>
+        </form>
+    
+<a href="" class="navbar-brand ms-3">Carosel</a>
+<p>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+</p>
+<div class="collapse navbar-collapse" id="navbar">
+  <ul class="navbar-nav me-auto" >
+    
+<li class="nav-item">
+<a href="#" class="nav-link">Home</a>
+</li>
+<li class="nav-item">
+  <a href="#" class="nav-link">About</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Link</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Odev1 Github</a></li>
+      <li><a class="dropdown-item" href="#">Odev2 Html</a></li>
+      <li><a class="dropdown-item" href="#">Odev3 Css</a></li>
+            <li><a class="dropdown-item" href="#">Odev4 Bootstrap</a></li>
+    </ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link disabled">Link</a>
+      </li>
+  </ul>
+
+</div>
+</nav>
+
+<!--3 ayri Card olusturma  -->
+
+<div class="container">
+  <div class="row row-cols-lg-3 row-cols-md-2 pt-3">
+    <div class="col-md-3 mt-5" >
+
+<div class="card " >
+       <img src="/Card-1.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+      <h5 class="card-title">Kabin-1</h5>
+      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, aperiam.</p>
+      <a href="#" class="btn btn-success">Satin Al</a>
+    </div>
+  </div>
+</div>
+
+<div class="col mt-5">
+
+  <div class="card" >
+    <img src="/Card-2.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+      <h5 class="card-title">Kabin-2</h5>
+      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, aperiam.</p>
+      <a href="#" class="btn btn-success">Satin Al</a>
+    </div>
+  </div>
+</div>
+
+<div class="col mt-5">
+  <div class="card" >
+    <img src="/Card-3.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+      <h5 class="card-title">Kabin-3</h5>
+      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, aperiam.</p>
+      <a href="#" class="btn btn-success">Satin Al</a>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+</div>
+<!--3 ayri resimli yazi -->
+<div class="container my-4 p-4 border-bottom">
+  <div class="row align-items-center">
+  <div class="col-md-4 order-md-1">
+    <img src="1.jpg" class="d-block w-100" alt="">
+  </div>
+  <div class="col-md-8 mt-3">
+    <h5>Lorem ipsum dolar sit amet.</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis accusantium saepe, quisquam optio commodi ipsam, eius asperiores ratione totam id harum veritatis deserunt mollitia, maiores at! Porro a officia recusandae?</p>
+  
+  </div>
+  </div>
+  </div>
+
+  <div class="container my-4 p-4 border-bottom">
+    <div class="row align-items-center">
+    <div class="col-md-4 ">
+      <img src="2.jpg" class="d-block w-100" alt="">
+    </div>
+    <div class="col-md-8 mt-3">
+      <h5>Lorem ipsum dolar sit amet.</h5>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis accusantium saepe, quisquam optio commodi ipsam, eius asperiores ratione totam id harum veritatis deserunt mollitia, maiores at! Porro a officia recusandae?</p>
+    
+    </div>
+    </div>
+    </div>
+
+
+<div class="container my-4 p-4 border-bottom">
+<div class="row align-items-center">
+<div class="col-md-4 order-md-1">
+  <img src="3.jpg" class="d-block w-100" alt="">
+</div>
+<div class="col-md-8 mt-3">
+  <h5>Lorem ipsum dolar sit amet.</h5>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis accusantium saepe, quisquam optio commodi ipsam, eius asperiores ratione totam id harum veritatis deserunt mollitia, maiores at! Porro a officia recusandae?</p>
+
+</div>
+</div>
+</div>
+
+<!--Footer -->
+<footer class="p-4 d-flex justify-content-between">
+<div>
+<span> 2012-2023 Kronos Co. </span>
+<span class="text-bg-primary">Privacy Terms</span>
+
+</div>
+<a href="#home" class="text-decoration-none">Back to top</a>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</html>
