@@ -8,7 +8,7 @@ var students = [
 ];
 
 
-//?1. Fonksiyon! 
+//?1. Fonksiyon
 //parametre olarak gelen indis numarasina gore ilgili ogrenciyi silen bir fonksiyon olusturunuz.
 
 //? 1. yol
