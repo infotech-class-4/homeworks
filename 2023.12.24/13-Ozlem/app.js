@@ -47,7 +47,7 @@ delStudentFunc(2) // veli silindi
 console.log(students);
 
 
-// 2.Fonksiyon
+// 2.Fonksiyon!
 //Ogrencilerin notlarinin ortalamasini bulan ve 60  ve ustu ogrenciler gecti digerleri kaldi olarak yazdiran fonsiyon olusturunuz.
 
 var x=1; // manuel olarak ogrenci indisi vermek icin yaziyoruz
