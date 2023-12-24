@@ -19,6 +19,7 @@ function calculate(operation, num1, num2) {
   }
 }
 
+
 // Test Cases
 let sumResult = calculate("sum", 5, 3);
 console.log();
