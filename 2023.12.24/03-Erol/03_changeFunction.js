@@ -2,14 +2,14 @@
 
 var students = [
   {
-    name: "Ali",
+    name: "Ahmet",
     surname: "Su",
     school: "I.O.O",
     class: "5/C",
     notes: [20, 90, 60],
   },
   {
-    name: "Veli",
+    name: "Erol",
     surname: "Tahta",
     school: "I.O.O",
     class: "5/C",
