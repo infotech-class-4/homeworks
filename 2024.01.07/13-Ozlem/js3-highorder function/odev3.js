@@ -52,12 +52,33 @@ const orders = [
 //! 1. Teslim edilemeyen siparisi bulun?
 
 const notDelivered= orders.filter((item)=> item.delivered === false)
-console.log(notDelivered);
+console.log(notDelivered);  // {orderId: '234', customerId: '234', deliveryDate: '01-02-2020', delivered: false, items: Array(1)}
+//length: 1
+
+
 
 
 //! 2. Her bir siparise totalPrice propertisini ekleyip toplam siparis tutarini hesaplayin.
 
+const sumPrice= orders.map((order)=>{
+let prices=0;
+  order.items.map((product)=>{
 
+    // console.log(product);
+    prices +=product.price 
+
+
+
+  })
+  
+  //console.log(prices);
+  return {
+    ...order,
+    totalPrice: prices
+  }
+})
+
+console.log(sumPrice);
 
 
 

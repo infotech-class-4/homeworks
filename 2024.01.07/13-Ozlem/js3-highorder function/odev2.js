@@ -116,12 +116,33 @@ console.log(fullNameArray);
 const departmentZahl= {};
 
 for(i=0; i<people.length; i++){
+
     if (departmentZahl[people[i].department]) {
-        departmentZahl[people[i].department++]
+
+        departmentZahl[people[i].department]++
+
     } else {
         departmentZahl[people[i].department]=1
     }
 }
 
-console.log(departmentZahl); // {Development: 1, Marketing: 1, Sales: 1, Office Management: 1}
+console.log(departmentZahl); // {Development: 6, Marketing: 1, Sales: 1, Office Management: 1}
 
+//! ikinci bir yontem
+const getDepartmentCount = (people)=>{
+  var departments = {}
+
+  for (const person of people) {
+   // console.log(person);
+    //people[i]=person
+
+    departments[person.department]= (departments[person.department] || 0)+1
+
+  }
+  
+  return departments
+}
+
+const getDepartments=getDepartmentCount(people)
+
+console.log(getDepartments);
