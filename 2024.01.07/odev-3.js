@@ -49,7 +49,29 @@ const orders = [
 ];
 
 // 1. Teslim edilemeyen siparisi bulun?
+
+// const teslimEdilmeyenSiparis = orders.find((order) => {
+//   return order.delivered == false;
+// });
+
+// console.log(teslimEdilmeyenSiparis);
 // 2. Her bir siparise totalPrice propertisini ekleyip toplam siparis tutarini hesaplayin
+
+// const topla = (siparisler) => {
+//   return siparisler.reduce((acc, item) => {
+//     acc = acc + item.price;
+//     return acc;
+//   }, 0);
+// };
+
+// const yeniListe = orders.map((order) => {
+//   return {
+//     ...order,
+//     totalPrice: topla(order.items),
+//   };
+// });
+
+// console.log(yeniListe);
 
 // {
 //   orderId: "578",
@@ -64,5 +86,12 @@ const orders = [
 // }
 
 // 3. Tüm siparişler teslim edildi mi?
+// const teslimEdildiMi = orders.every((order) => order.delivered == true);
+
+// // const teslimEdildiMi = orders.every((order) => {
+// //   return order.delivered == true;
+// // });
+
+// console.log(teslimEdildiMi);
 
 // 4. productId: "123" olan ürün teslim edildi mı?
