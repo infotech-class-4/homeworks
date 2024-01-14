@@ -86,5 +86,31 @@ const people = [
 ];
 
 // 1. Tüm kisilerin ortalama geliri nedir?
+// const ortalamaGelir = people.reduce((toplam, person) => {
+//   return (toplam = toplam + person.salary);
+// }, 0);
+
+// console.log(ortalamaGelir / people.length);
 // 2. Kisilerin tam adi '{...item, fullName: adi soyadi}' listesini olusturun
+
+// const fullNameList = people.map((person) => {
+//   return {
+//     ...person,
+//     fullName: person.firstName + " " + person.lastName,
+//   };
+// });
+
+// console.log(fullNameList);
 // 3. Her bölümde kac kisi var?
+const bolumKisiSayilari = people.reduce((acc, item) => {
+  const bolumAdi = item.department;
+
+  if (acc[bolumAdi]) {
+    acc[bolumAdi]++;
+  } else {
+    acc[bolumAdi] = 1;
+  }
+  return acc;
+}, {});
+
+console.log(bolumKisiSayilari);
