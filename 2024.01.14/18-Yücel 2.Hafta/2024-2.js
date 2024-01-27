@@ -62,14 +62,13 @@ parkingplaces()
     });
 
 
-
     // Async-Await
 
 
 
 
 const biröncekiislembitti=true;
-const bekleyenmüsteri = true;
+const bekleyenmüsteri = false;
 
 const siraPromise = () => {
 
