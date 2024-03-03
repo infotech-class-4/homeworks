@@ -1,106 +1,105 @@
-//? input ve divi secelim
+const inputFieldName = document.querySelector(".form-control");
+const btnCreate = document.querySelector("#create-btn");
 
+// ADD butonuna tiklaninca olusacak table icin;
+const myForm = document.querySelector("#my-form");
 
+const myTbody = document.querySelector("tbody");
 
+const btnAddField = document.createElement("button");
 
-const inputDiv = document.querySelector(".form-control");
-console.log(inputDiv);
+const createField = () => {
+  //console.log("tiklandi");
 
-//? input icin event ekleyelim
-let inputValue="";
+  if (inputFieldName.value == "") {
+    alert("lutfen veri geriniz");
+    return;
+  }
 
-inputDiv.addEventListener("input", (event) => {
-  console.log(event.target.value);
+  //  console.log(inputFieldName.value);
 
-  inputValue= event.target.value // inputun degerini guncellemek icin
-  myInp.placeholder = inputValue; // asagida olusturdugum inputun placeholderi girilen deger o.i.
+  const newFieldInput = document.createElement("input");
+  newFieldInput.type = "text";
+  newFieldInput.placeholder = inputFieldName.value.toUpperCase();
+  newFieldInput.name = inputFieldName.value;
+  newFieldInput.className = "form-control my-field";
 
+  myForm.appendChild(newFieldInput);
+
+  // const btnAddField=document.createElement("button")
+  btnAddField.textContent = "ADD";
+  btnAddField.className = "btn btn-sm btn-primary";
+  btnAddField.type = "submit";
+
+  myForm.appendChild(btnAddField);
+
+  const header = document.querySelector("thead tr");
+
+  const newTh = document.createElement("th");
+  newTh.textContent = inputFieldName.value.toUpperCase();
+
+  header.appendChild(newTh);
+
+  inputFieldName.value = ""; // burda yazmamiz lazim yoksa th lar gozukmez
+};
+
+//? click eventinden sonra bir fonksiyona gitsin ve o fonksiyonu calsitirsin istyrz.fakat bunu en sonda yazmaliyiz.kod okuma sirasina gore.
+
+btnCreate.addEventListener("click", createField);
+
+//!____________________________________________
+
+myForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const formChildren = document.querySelectorAll(".my-field");
+  console.log(formChildren); // NodeList [input.form-control.my-field]
+
+  const myTr = document.createElement("tr");
+
+  formChildren.forEach((child) => {
+    //console.log(child);// butun inputu verir
+    //console.log(child.value);
+
+    const myTd = document.createElement("td");
+    myTd.textContent = child.value.toUpperCase();
+
+    // yanlis deger girilince duzeltmesi icin;
+
+    myTd.addEventListener("click", (e) => {
+      console.log(e.target);
+      const newValue = prompt("Yeni degeri giriniz");
+      if (newValue) e.target.textContent = newValue.toUpperCase();
+    });
+
+    myTr.appendChild(myTd);
+
+    //  myTbody.appendChild(myTr);  // butun islemler bitince bunu sahiplendirelim
+  });
+
+  //? Delete button
+
+  const deleteBtnTd = document.createElement("td");
+  const deleteBtn = document.createElement("button");
+  deleteBtn.className = "btn btn-sm btn-danger";
+  deleteBtn.textContent = "Delete";
+
+  deleteBtnTd.appendChild(deleteBtn);
+  myTr.appendChild(deleteBtnTd);
+
+  myTbody.appendChild(myTr);
+
+  // formu resetlemek icin;
+  myForm.reset();
+
+  deleteBtn.addEventListener("click", (e) => {
+    //  console.log(e.target);
+    deleteTodo(e.target.parentElement.parentElement);
+  });
 });
-//!________________________________________________________
-//? input buton ve divi olusturalim, özelliklerini verelim
 
-const divInpGroup = document.querySelector(".myInpGroup"); //sahiplendirme islemini de buraya yapacgz
+// delete fonksyonu
 
-// yeni buton ve imputu olusturalim
-const myInp = document.createElement("input");
-
-myInp.type = "text", 
-myInp.style.borderColor = "blue";
-
-const myBtn = document.createElement("button");
-myBtn.type = "button";
-myBtn.innerHTML = "ADD";
-myBtn.className = "btn btn-outline-primary bg-white text-primary";
-
-
-//!____________________________________________________________
-
-//? buttona tiklaninca olusturdugumuz taglari eklesin.butonu sec, click eventi ekle, nereye ekleyeceksen onu sec,  ne sahiplendireceksen ekle
-
-
-const btnB = document.querySelector(".btn");
-console.log(btnB);
-
-
-btnB.addEventListener("click", (e) => {
-  //console.log(e);
-
-
-
-  divInpGroup.appendChild(myInp.cloneNode());// birden fazla inputun olusmasi icin clonluyorz
-  divInpGroup.appendChild(myBtn);
-
-  inputDiv.value = ""; // input alanini bosaltmak icin
-
-
-  //! table alani
-
-const myTh= document.createElement("th")
-myTh.scope="col"
-
-
-const myThead=document.querySelector("thead")
-const tr_1=myThead.children[0]// ustte sahiplendirdik
-//console.log(tr_1);
-
-tr_1.appendChild(myTh)
-myTh.textContent=inputValue
-
-
-});
-
-let inputValue2=""
-
-
-
-
-myBtn.addEventListener("click",(e)=>{
-
-    inputValue2=myInp.value;
-//myBtn ye tiklaninca; td leri olusturacgz
-
-
-const bodyTd=document.createElement("td")
-bodyTd.textContent=inputValue2
-
-
-const myBody=document.querySelector("tbody")
-const tr_2=myBody.children[0]
-tr_2.appendChild(bodyTd)
-
-myInp.value=""
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const deleteTodo = (todo) => {
+  todo.remove();
+};
