@@ -10,6 +10,7 @@ const btnAddField = document.createElement("button");
 
 const createField = () => {
   //console.log("tiklandi");
+  inputFieldName.style.fontSize="27px"
 
   if (inputFieldName.value == "") {
     alert("lutfen veri geriniz");
@@ -18,11 +19,14 @@ const createField = () => {
 
   //  console.log(inputFieldName.value);
 
+
+
   const newFieldInput = document.createElement("input");
   newFieldInput.type = "text";
   newFieldInput.placeholder = inputFieldName.value.toUpperCase();
   newFieldInput.name = inputFieldName.value;
   newFieldInput.className = "form-control my-field";
+  newFieldInput.style.fontSize = "24px";
 
   myForm.appendChild(newFieldInput);
 
@@ -30,6 +34,8 @@ const createField = () => {
   btnAddField.textContent = "ADD";
   btnAddField.className = "btn btn-sm btn-primary";
   btnAddField.type = "submit";
+  btnAddField.style.fontSize = "20px";
+
 
   myForm.appendChild(btnAddField);
 
@@ -56,6 +62,7 @@ myForm.addEventListener("submit", (e) => {
   console.log(formChildren); // NodeList [input.form-control.my-field]
 
   const myTr = document.createElement("tr");
+ 
 
   formChildren.forEach((child) => {
     //console.log(child);// butun inputu verir
@@ -63,6 +70,8 @@ myForm.addEventListener("submit", (e) => {
 
     const myTd = document.createElement("td");
     myTd.textContent = child.value.toUpperCase();
+    myTd.style.fontSize="24px"
+   
 
     // yanlis deger girilince duzeltmesi icin;
 
@@ -82,10 +91,13 @@ myForm.addEventListener("submit", (e) => {
   const deleteBtnTd = document.createElement("td");
   const deleteBtn = document.createElement("button");
   deleteBtn.className = "btn btn-sm btn-danger";
+
   deleteBtn.textContent = "Delete";
+  deleteBtn.style.fontSize="24px"
 
   deleteBtnTd.appendChild(deleteBtn);
   myTr.appendChild(deleteBtnTd);
+
 
   myTbody.appendChild(myTr);
 
