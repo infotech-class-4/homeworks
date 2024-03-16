@@ -1,0 +1,14 @@
+{
+    "name": "6-hamza-vedat",
+    "version": "1.0.0",
+    "type":"module",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev":"nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
