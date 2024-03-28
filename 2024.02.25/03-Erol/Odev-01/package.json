@@ -1,0 +1,16 @@
+{
+  "name": "odev-01",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test1": "node app.js",
+    "test2": "nodemon app.js"
+  },
+  "author": "Erol Ertekin",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
