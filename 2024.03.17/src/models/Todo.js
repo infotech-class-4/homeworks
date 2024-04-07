@@ -9,11 +9,11 @@ const todoSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  createdAt: {
+  createdDate: {
     type: Date,
     default: Date.now(),
   },
-  completedAt: {
+  completed: {
     type: Boolean,
     default: false,
   },
