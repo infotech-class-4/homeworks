@@ -105,6 +105,7 @@ router.post("/login", login);
 
 router.get("/:id", find);
 
+
 router.get("/", auth, findAll);
 
 router.patch("/update", update);
