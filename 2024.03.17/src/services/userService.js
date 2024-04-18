@@ -54,6 +54,9 @@ const token=jwt.sign(user, process.env.ACCESS_TOKEN)
 res.json({...user,token:token})
 
 };
+
+
+// sadece bir kullaniciyi getirmek icin
 export const find=async(req,res)=>{
   try {
     const id=req.params.id 
@@ -65,6 +68,8 @@ export const find=async(req,res)=>{
     
   }
 }
+//butun kulölanicilari getirmesi icin;
+
 
 export const findAll= async(req, res)=>{
   try {
