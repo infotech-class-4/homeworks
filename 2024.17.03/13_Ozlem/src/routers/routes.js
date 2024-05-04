@@ -10,7 +10,7 @@ import {
   find,
   findAll,
   update,
-  remove,
+  remove
 } from "../services/userService.js";
 
 // router.get("/",(req,res)=>{
