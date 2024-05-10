@@ -3,7 +3,7 @@
 // Promise lari yazalim;
 
 const anmeldung2= true;
-let blut2=false;
+let blut2=true;
 
 const krankenhausAnmeldungPromise=()=>{
     return new Promise((resolve, reject)=>{
@@ -87,6 +87,3 @@ console.log(sonuc3);
 
 }
 ergebnis();
-
-
-
